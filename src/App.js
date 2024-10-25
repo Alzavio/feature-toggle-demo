@@ -1,23 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import FeatureToggle from "./FeatureToggle";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <FeatureToggle featureName={"Test1"} isEnabled={true} />
+      <FeatureToggle featureName={"Test2"} isEnabled={false} />
+      <FeatureToggle featureName={"Test3"} isEnabled={true} />
     </div>
   );
 }
